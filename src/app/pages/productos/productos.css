@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 8rem;
+
+    object-fit: cover;
+}
+
+@media (min-width: 751px) {
+    #titulo {
+        color: aqua;
+    }
+}
+
+@media(max-width: 750px) {
+    #titulo {
+        color: blue;
+    }
+}
