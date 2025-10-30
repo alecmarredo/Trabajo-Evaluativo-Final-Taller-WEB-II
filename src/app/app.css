@@ -1,7 +1,15 @@
 .navbar {
     background-color: rgb(0, 15, 44);
+      position: fixed; /* Fija la barra en su lugar */
+      top: 0; /* La coloca en la parte superior */
+      left: 0; /* Alineada al borde izquierdo */
+      width: 100%; /* Ocupa todo el ancho de la página */
+      z-index: 1000;
 }
 
 .nav-link, .nav-link.active {
     color: white;
 }
+
+
+ 
