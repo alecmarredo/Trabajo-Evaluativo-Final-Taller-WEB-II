@@ -19,9 +19,42 @@ xs -> EXTRA SMALL
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
-        <li class="nav-item">
+
+        <!-- <li class="nav-item">
           <a class="nav-link" href= "Productos">Productos</a>
+        </li> -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><strong>Categorias:</strong></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Carreras</a></li>
+            <li><a class="dropdown-item" href="#">Casual</a></li>
+            <li><a class="dropdown-item" href="#">Deportes</a></li>
+            <li><a class="dropdown-item" href="#">Estrategia</a></li>
+            <li><a class="dropdown-item" href="#">Fantasía</a></li>
+            <li><a class="dropdown-item" href="#">Indie</a></li>
+            <li><a class="dropdown-item" href="#">Multijugador</a></li>
+            <li><a class="dropdown-item" href="#">Mundo Abierto</a></li>
+            <li><a class="dropdown-item" href="#">Puzle</a></li>
+            <li><a class="dropdown-item" href="#">Realidad Virtual</a></li>
+            <li><a class="dropdown-item" href="#">RPG</a></li>
+            <li><a class="dropdown-item" href="#">SandBox</a></li>
+            <li><a class="dropdown-item" href="#">Shooters</a></li>
+            <li><a class="dropdown-item" href="#">Sigilo</a></li>
+            <li><a class="dropdown-item" href="#">Simulación</a></li>
+            <li><a class="dropdown-item" href="#">Terror</a></li>
+            
+          </ul>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href= "Productos">Ofertas</a>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Contacto</a>
         </li>
@@ -36,4 +69,43 @@ xs -> EXTRA SMALL
     </div>
   </div>
 </nav>
-<router-outlet/>
+
+
+<router-outlet/> 
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="Nebula_Games_Logo-removebg-preview.png" alt="Nebula Games Logo" width="300px" height="125">
+      <p>Explora nuevos mundos. Juega sin límites.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Navegación</h3>
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="Productos">Productos</a></li>
+        <li><a href="Ofertas">Ofertas</a></li>
+        <li><a href="Contacto">Contacto</a></li>
+        <li><a href="Sobre">Sobre</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Seguinos</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nebula Games. Todos los derechos reservados.</p>
+  </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</footer>

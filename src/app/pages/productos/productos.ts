@@ -43,7 +43,7 @@ constructor() {
     img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1753974947",
     alt: "Grand Theft Auto V Enhanced",
     precio: 44.99,
-    fecha_lanzamiento: new Date("14-4-2015"),
+    fecha_lanzamiento: new Date("4-14-2015"),
     },
 
     {
