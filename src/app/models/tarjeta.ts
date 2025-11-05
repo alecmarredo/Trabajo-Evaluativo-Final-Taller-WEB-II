@@ -3,6 +3,6 @@ export interface Tarjeta {
     titulo: string;
     descripcion: string;
     precio: number;
-    img: string;
-    alt: string;
+    img?: string;
+    alt?: string;
 } 

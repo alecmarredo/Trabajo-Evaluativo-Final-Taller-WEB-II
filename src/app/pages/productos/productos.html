@@ -4,26 +4,67 @@
     <div class="row">
 
         <div *ngFor="let i of infoVideojuegos" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
-            <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
 
-            <div class="card-body">
-                <h5 class="card-title">{{i.titulo}}</h5>
-                <p class="card-text">
-                    {{i.descripcion}}
-                </p>
+            <div class="card">
+                <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
 
-            <p class="card-text">
-                Fecha de Lanzamiento:{{i.fecha_lanzamiento | date: "dd/MM/yy"}}
-            </p>
+                <div class="card-body">
+                    <h5 class="card-title">{{i.titulo}}</h5>
+                    <p class="card-text">
+                        {{i.descripcion}}
+                    </p>
 
-            <p class="card-text">
-                ${{i.precio}}
-            </p>
-                <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    <p class="card-text">
+                        Fecha de Lanzamiento:{{i.fecha_lanzamiento | date: "dd/MM/yy"}}
+                    </p>
+
+                    <p class="card-text">
+                        ${{i.precio}}
+                    </p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMas" (click)="verMas(i)">
+                        Ver más
+                    </button>
+
+                </div>
             </div>
         </div>
 
     </div>
 </div>
- 
 
+
+
+<!-- Modal Bidereccional -->
+<div class="modal fade" id="verMas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- ? -> Admite propiedades de la variable -->
+                <h1 class="modal-title fs-5" id="exampleModalLabel">{{productosSeleccionados?.titulo}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+                <!-- Imagen del modal -->
+
+                <div class="modal-img">
+                    <img src="{{productosSeleccionados?.img}}" alt="{{productosSeleccionados?.alt}}">
+                </div>
+
+                <!-- Descripción del modal -->
+
+                <div class="modal-info">
+                    <p>{{productosSeleccionados?.descripcion}}</p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

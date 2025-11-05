@@ -59,4 +59,19 @@ constructor() {
 
   ]
 }
+
+// Variable para obtener los datos de un producto o una tarjeta seleccionada
+// any --> NO va a tener restricción y admite cualquier tipo
+
+productosSeleccionados: any = null;
+
+/**
+ * @description Método para ver más información de un prodcuto
+ * Recibe como parámetro un producto de tipo "any" y lo asigna a la variable
+ * "productosSeleccionados"
+ */
+
+verMas(producto: any) {
+  this.productosSeleccionados = producto;
+}
 }
