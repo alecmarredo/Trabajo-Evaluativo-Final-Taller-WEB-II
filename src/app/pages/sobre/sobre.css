@@ -1,0 +1,85 @@
+/* === SECCIÓN SOBRE === */
+#sobre {
+  background-color: #0a0f25;
+  color: #b0b8d1;
+  font-family: 'Poppins', sans-serif;
+  padding: 120px 20px 100px; /* 🔹 Espacio arriba y abajo */
+  min-height: 100vh; /* 🔹 Centrado vertical */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* === CONTENEDOR === */
+.sobre-contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #0b1230;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 180, 255, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* === TÍTULO === */
+.sobre-contenedor h2 {
+  color: #00b4ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* === TEXTO === */
+.sobre-contenedor p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #b0b8d1;
+}
+
+.sobre-contenedor span {
+  color: #00b4ff;
+  font-weight: 600;
+}
+
+.sobre-contenedor strong {
+  color: #00b4ff;
+}
+
+/* === IMAGEN === */
+.sobre-img {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-img img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 180, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 180, 255, 0.6);
+}
+
+/* === ANIMACIÓN DE ENTRADA === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .sobre-contenedor {
+    padding: 30px;
+  }
+
+  .sobre-contenedor p {
+    font-size: 0.95rem;
+  }
+}

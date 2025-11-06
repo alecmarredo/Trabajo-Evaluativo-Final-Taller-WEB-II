@@ -1,0 +1,102 @@
+/* === SECCIÓN CONTACTO === */
+#contacto {
+  background-color: #0a0f25;
+  padding: 120px 20px 100px; /* 🔹 Más espacio arriba y abajo */
+  color: #b0b8d1;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  min-height: 100vh; /* 🔹 Garantiza que ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacto h2 {
+  color: #00b4ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#contacto p {
+  color: #b0b8d1;
+  margin-bottom: 40px;
+}
+
+/* === FORMULARIO === */
+.contacto-form {
+  background-color: #0b1230;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 180, 255, 0.3);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contacto-form label {
+  display: block;
+  color: #00b4ff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  background-color: #0f1638;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+  color: #7b89b6;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  box-shadow: 0 0 8px rgba(0, 180, 255, 0.6);
+}
+
+/* === BOTÓN === */
+.contacto-form button {
+  width: 100%;
+  background: linear-gradient(90deg, #0077ff, #00b4ff);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 180, 255, 0.4);
+}
+
+.contacto-form button:hover {
+  background: linear-gradient(90deg, #00b4ff, #0077ff);
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.7);
+  transform: scale(1.03);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  #contacto {
+    padding: 100px 20px;
+  }
+
+  .contacto-form {
+    padding: 30px;
+  }
+}

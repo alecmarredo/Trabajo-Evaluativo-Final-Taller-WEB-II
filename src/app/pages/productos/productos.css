@@ -42,6 +42,8 @@ img {
   justify-content: center;
   gap: 2rem;
   padding-bottom: 50px;
+  padding: 110px 10px 100px; /* 🔹 Espacio arriba y abajo */
+  min-height: 100vh; /* 🔹 Centrado vertical */
 }
 
 /* === CADA CARD === */
@@ -58,6 +60,7 @@ img {
   max-width: 300px;
   padding: 0;
   /* margin: 1rem; */
+  
 }
 
 .card:hover {
