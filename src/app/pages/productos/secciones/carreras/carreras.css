@@ -106,6 +106,47 @@
   transform: scale(1.05);
 }
 
+/* === TÍTULO DE SECCIÓN === */
+.titulo-seccion {
+  background: linear-gradient(180deg, #03071f 0%, #0a0f25 100%);
+  text-align: center;
+  padding: 160px 20px 60px; 
+  border-bottom: 2px solid #00b4ff;
+  box-shadow: 0 5px 20px rgba(0, 180, 255, 0.2);
+  position: relative;
+  z-index: 1; 
+}
+
+
+.titulo-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.titulo-contenido h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00b4ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(0, 180, 255, 0.4);
+  animation: aparecer 0.8s ease-out;
+}
+
+/* === ANIMACIÓN DE ENTRADA === */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .card-img-top {

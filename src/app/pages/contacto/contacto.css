@@ -90,11 +90,6 @@
   transform: scale(1.03);
 }
 
-/* === ANIMACIÓN DE ENTRADA === */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
 
 /* === RESPONSIVE === */

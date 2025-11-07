@@ -1,0 +1,199 @@
+
+/* === TÍTULO === */
+#titulo {
+  text-align: center;
+  color: #00b4ff;
+  font-weight: 700;
+  margin: 40px 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 180, 255, 0.5);
+}
+
+/* === CONTENEDOR PRINCIPAL === */
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 50px;
+}
+
+/* === CADA CARD === */
+.card {
+  background-color: #0a0f25;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 180, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* max-width: 300px; */
+  padding: 0;
+  /* margin: 1rem; */
+  
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 180, 255, 0.5);
+}
+
+/* === IMAGEN DEL JUEGO === */
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #00b4ff;
+}
+
+/* === CUERPO DE LA CARD === */
+.card-body {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* === TÍTULO DEL JUEGO === */
+.card-title {
+  font-size: 1.1rem;
+  color: #00b4ff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* === DESCRIPCIÓN Y TEXTOS === */
+.card-text {
+  font-size: 0.9rem;
+  color: #b0b8d1;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+/* === PRECIO === */
+.card-text:last-of-type {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+/* === BOTÓN === */
+.btn.btn-primary {
+  background: linear-gradient(90deg, #0077ff, #00b4ff);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  box-shadow: 0 0 10px rgba(0, 180, 255, 0.4);
+}
+
+.btn.btn-primary:hover {
+  background: linear-gradient(90deg, #00b4ff, #0077ff);
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* === ETIQUETA DE OFERTA === */
+.oferta-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(90deg, #ff0055, #ff6600);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(255, 80, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+/* === PRECIOS === */
+.precio-viejo {
+  color: #888;
+  text-decoration: line-through;
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.precio-nuevo {
+  color: #00b4ff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* === TÍTULO DE SECCIÓN === */
+.titulo-seccion {
+  background: linear-gradient(180deg, #03071f 0%, #0a0f25 100%);
+  text-align: center;
+  padding: 160px 20px 60px; 
+  border-bottom: 2px solid #00b4ff;
+  box-shadow: 0 5px 20px rgba(0, 180, 255, 0.2);
+  position: relative;
+  z-index: 1; 
+}
+
+
+.titulo-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.titulo-contenido h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00b4ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(0, 180, 255, 0.4);
+  animation: aparecer 0.8s ease-out;
+}
+
+/* === ANIMACIÓN DE ENTRADA === */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === PRECIO ANTIGUO Y NUEVO === */
+.precio-antiguo {
+  color: #888;
+  text-decoration: line-through;
+  margin-right: 8px;
+  font-size: 0.95rem;
+}
+
+.precio-actual {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.precio-actual.oferta {
+  color: #00b4ff;
+  text-shadow: 0 0 10px rgba(0, 180, 255, 0.6);
+}
+
+
+
+

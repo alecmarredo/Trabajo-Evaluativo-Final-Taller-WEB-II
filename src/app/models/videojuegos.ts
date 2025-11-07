@@ -6,5 +6,7 @@ export interface Videojuegos {
     img: string;
     alt: string;
     precio: number;
+    enOferta?: boolean;
+    precioOferta?: number;
     fecha_lanzamiento: Date;
 }
