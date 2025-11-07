@@ -2,24 +2,28 @@
 
     <h1>Nuevo Producto</h1>
 
-    <form>
+    <!-- Insertamos directivas formGroup en etiqueta 
+     "form" para crear y vuncular un formulario reactivo -->
+    <form [formGroup]="nuevoProducto" (ngSubmit)="crearTarjeta()">
 
         <div class="mb-3">
             <label for="titulo" class="form-label">Título</label>
-            <input id="titulo" type="text" class="form-control">
+            <!-- formControlName -> Obtiene el valor individual de cada dato ingresado-->
+            <input id="titulo" type="text" class="form-control" formControlName="titulo">
         </div>
 
         <div class="mb-3">
             <label for="descripcion" class="form-label">Descripción</label>
-            <input id="descripcion" type="text" class="form-control">
+            <input id="descripcion" type="text" class="form-control" formControlName="descripcion">
         </div>
 
         <div class="mb-3">
             <label for="precio" class="form-label">Precio</label>
-            <input id="precio" type="number" class="form-control">
+            <input id="precio" type="number" class="form-control" formControlName="precio">
         </div>
 
-        <button type="submit" class="btn btn-primary w-100">Agregar</button>
+        <!-- El botón se va a desahabilitar cuando el forulario "nuevoProducto" no sea valido ("!"), Ej: Faltan rellenar campos -->
+        <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">Agregar</button>
 
     </form>
 </div>
