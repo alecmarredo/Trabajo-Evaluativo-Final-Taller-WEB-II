@@ -10,26 +10,27 @@ xs -> EXTRA SMALL
 -->
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="Nebula Games Logo.png" alt="" width="90px"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">
+      <img src="Nebula Games Logo.png" alt="Nebula Games Logo" width="90px">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-
-        <!-- <li class="nav-item">
-          <a class="nav-link" href= "Productos">Productos</a>
-        </li> -->
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Productos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><strong>Categorias:</strong></a></li>
+            <li><a class="dropdown-item" href="#"><strong>Categorías:</strong></a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="Carreras">Carreras</a></li>
             <li><a class="dropdown-item" href="Casual">Casual</a></li>
@@ -47,31 +48,31 @@ xs -> EXTRA SMALL
             <li><a class="dropdown-item" href="Sigilo">Sigilo</a></li>
             <li><a class="dropdown-item" href="Simulacion">Simulación</a></li>
             <li><a class="dropdown-item" href="Terror">Terror</a></li>
-            
           </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href= "Ofertas">Ofertas</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href= "Contacto">Contacto</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href= "Sobre">Sobre</a>
-        </li>
-        
+        <li class="nav-item"><a class="nav-link" href="Ofertas">Ofertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contacto">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="Sobre">Sobre</a></li>
       </ul>
-      <form class="d-flex" role="search">
-        <button class="btn btn-outline-success" type="submit"><i class="bi bi-person"></i>¡Hola! Iniciá sesión <br> O podés registrarte</button>
-        <button class="btn btn-outline-success" type="submit">Registrarse</button>
-      </form>
+
+      <!-- 🔹 Bloque usuario + carrito -->
+      <div class="navbar-icons">
+        <div class="user-section">
+          <i class="bi bi-person"></i>
+          <div class="user-text">
+            <span class="user-login">¡Hola! Iniciá sesión</span><br>
+            <span class="user-register">O podés registrarte</span>
+          </div>
+        </div>
+        <div class="cart-section">
+          <i class="bi bi-basket"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
-
 
 <router-outlet/> 
 

@@ -86,3 +86,111 @@
   font-size: 14px;
   color: #b0b8d1;
 }
+
+
+/* === NAVBAR PERSONALIZADA NEBULA === */
+.navbar {
+  background-color: rgb(0, 15, 44);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.nav-link, .nav-link.active {
+  color: white ;
+}
+
+.nav-link:hover {
+  color: #00b4ff ;
+}
+
+/* === DROPDOWN OSCURO (fuente igual que el resto) === */
+.dropdown-menu {
+  background-color: #0e162b ;
+  border: 1px solid #00b4ff30;
+  font-family: "Quantico", sans-serif;
+}
+
+.dropdown-item {
+  color: #b0b8d1 ;
+  font-family: "Quantico", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+  background-color: #00b4ff20 ;
+  color: #00b4ff ;
+}
+
+
+/* === ICONOS USUARIO + CARRITO === */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 30px;
+  color: #fff;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-section i {
+  font-size: 1.5rem;
+  color: #00b4ff;
+}
+
+.user-text {
+  line-height: 1.1;
+}
+
+.user-login {
+  font-weight: 700;
+  color: #00b4ff;
+  font-size: 0.9rem;
+}
+
+.user-register {
+  font-size: 0.8rem;
+  color: #b0b8d1;
+}
+
+/* === CARRITO === */
+.cart-section {
+  position: relative;
+}
+
+.cart-section i {
+  font-size: 1.8rem;
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+.cart-section:hover i {
+  color: #00b4ff;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #aaff00;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

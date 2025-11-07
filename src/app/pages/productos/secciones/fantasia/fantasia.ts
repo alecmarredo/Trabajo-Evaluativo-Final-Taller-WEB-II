@@ -57,6 +57,94 @@ this.infoVideojuegos = [
     precio: 34.99,
     fecha_lanzamiento: new Date("8-3-2023"),
     },
+
+    {
+    id: 5,
+    titulo: "Black Myth: Wukong",
+    categoria: "Fantasía",
+    descripcion: "Black Myth: Wukong es un RPG de acción inspirado en la mitología china. Encarnarás al Predestinado, que ha de embarcarse en un viaje repleto de peligros y maravillas para descubrir la verdad oculta acerca de una gloriosa leyenda del pasado.",
+    img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1760601605",
+    alt: "Black Myth: Wukong",
+    precio: 59.99,
+    fecha_lanzamiento: new Date("8-19-2024"),
+    },
+
+    {
+    id: 6,
+    titulo: "Elden Ring",
+    categoria: "Fantasía",
+    descripcion: "EL NUEVO JUEGO DE ROL Y ACCIÓN DE AMBIENTACIÓN FANTÁSTICA. Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.",
+    img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1748630546",
+    alt: "Elden Ring",
+    precio: 47.99,
+    fecha_lanzamiento: new Date("2-24-2024"),
+    },
+
+    {
+    id: 7,
+    titulo: "Valheim",
+    categoria: "Fantasía",
+    descripcion: "Un brutal juego de supervivencia y exploración multijugador, ambientado en un purgatorio generado de forma procedural e inspirado en la cultura vikinga. ¡Lucha, construye y conquista tu viaje en una saga digna de la bendición de Odin!",
+    img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/892970/de0bdcf6c008c508a79d8e75eb91fc67f4bebd5d/header.jpg?t=1757486247",
+    alt: "Valheim",
+    precio: 13.19,
+    fecha_lanzamiento: new Date("2-2-2021"),
+    },
+
+    {
+    id: 8,
+    titulo: "Tavern Keeper",
+    categoria: "Fantasía",
+    descripcion: "De los creadores de Game Dev Tycoon llega Tavern Keeper 🍻, un simulador de gestión cuqui y caótico, ¡con un sandbox de decoración muy versátil y un mágico libro de cuentos con historias que rolear!",
+    img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/436780/622d3c33fd94631d86894a8e2dd15071c02779d0/header.jpg?t=1762343337",
+    alt: "Tavern Keeper",
+    precio: 11.19,
+    fecha_lanzamiento: new Date("9-3-2025"),
+    },
+
+    {
+    id: 9,
+    titulo: "Hades II",
+    categoria: "Fantasía",
+    descripcion: "Usa las artes oscuras para abrirte paso más allá del inframundo y enfréntate al Titán del Tiempo en esta cautivadora continuación del galardonado juego de mazmorras de tipo rogue-like.",
+    img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1759973532",
+    alt: "Hades II",
+    precio: 14.99,
+    fecha_lanzamiento: new Date("9-25-2025"),
+    },
+
+    {
+    id: 10,
+    titulo: "Mortal Kombat: Legacy Kollection",
+    categoria: "Fantasía",
+    descripcion: "¡Entra en la arena y elige a tu luchador! Vive los orígenes legendarios de la franquicia con los arcades clásicos con los que todo comenzó, junto a una cuidada selección de las versiones domésticas más queridas y los lanzamientos raros favoritos de los fans: una celebración de su legado innovador.",
+    img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3454980/24fece3b770962ade1a94dfb3f134befe97469b9/header.jpg?t=1761854834",
+    alt: "Mortal Kombat: Legacy Kollection",
+    precio: 22.99,
+    fecha_lanzamiento: new Date("10-30-2025"),
+    },
+
+    {
+    id: 11,
+    titulo: "Enshrouded",
+    categoria: "Fantasía",
+    descripcion: "Sois Flameborn, la última esperanza de una raza moribunda. Sobrevivid a una niebla corruptora y devolved la belleza a vuestro reino. Aniquilad a temibles enemigos en un mundo inabarcable, levantad edificaciones y abríos paso en este RPG de acción y supervivencia cooperativo para hasta 16 jugadores.",
+    img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1203620/e67cd0b0a988dd61beaf0c9f0782ba0dcc23e0fa/header.jpg?t=1761294141",
+    alt: "Enshrouded",
+    precio: 14.99,
+    fecha_lanzamiento: new Date("1-24-2024"),
+    },
+
+    {
+    id: 12,
+    titulo: "Diablo® IV",
+    categoria: "Fantasía",
+    descripcion: "Únete a la lucha por Santuario en Diablo® IV, la aventura de rol y acción definitiva. Vive la campaña alabada por la crítica y nuevo contenido de temporada.",
+    img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2344520/80f21a42e378b93e8fbb68ee43103be8ab84891b/header.jpg?t=1758649357",
+    alt: "Diablo® IV",
+    precio: 49.99,
+    fecha_lanzamiento: new Date("10-17-2023"),
+    },
   ]
 
 }

@@ -1,1 +1,36 @@
-<p>multijugador works!</p>
+<section class="titulo-seccion">
+  <div class="titulo-contenido">
+    <h1>Fantasía</h1>
+  </div>
+</section>
+
+<div class="container">
+    <div class="row">
+
+        <div *ngFor="let i of infoVideojuegos" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+
+            <div class="card">
+                <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{i.titulo}}</h5>
+                    <p class="card-text">
+                        {{i.descripcion}}
+                    </p>
+
+                    <p class="card-text">
+                        Fecha de Lanzamiento:{{i.fecha_lanzamiento | date: "dd/MM/yy"}}
+                    </p>
+
+                    <p class="card-text">
+                        ${{i.precio}}
+                    </p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
