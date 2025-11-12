@@ -26,4 +26,8 @@
         <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">Agregar</button>
 
     </form>
+
+    <ul class="list-group" *ngFor="let tarjeta of coleccionProductos">
+        <li class="list-group-item">{{tarjeta.titulo}} - {{tarjeta.precio}}</li>
+</ul>
 </div>
