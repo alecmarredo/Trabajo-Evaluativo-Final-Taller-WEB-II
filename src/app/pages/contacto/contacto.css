@@ -1,11 +1,11 @@
 /* === SECCIÓN CONTACTO === */
 #contacto {
   background-color: #0a0f25;
-  padding: 120px 20px 100px; /* 🔹 Más espacio arriba y abajo */
+  padding: 120px 20px 100px; /* Más espacio arriba y abajo */
   color: #b0b8d1;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  min-height: 100vh; /* 🔹 Garantiza que ocupe toda la pantalla */
+  min-height: 100vh; /* Garantiza que ocupe toda la pantalla */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,5 +100,16 @@
 
   .contacto-form {
     padding: 30px;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

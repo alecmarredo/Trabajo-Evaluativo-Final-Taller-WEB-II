@@ -73,7 +73,7 @@ this.infoVideojuegos = [
   descripcion: "Skate. reimagina el skateboarding en un mundo abierto donde expresarte sobre la tabla, crear tus propias rampas, trucos y vivir la escena urbana en línea. Vive la libertad del patín en una ciudad para todos.",
   img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3354750/79c5a87b61a396cc6e6b69e3a083727f175dea83/header.jpg?t=1761670816",
   alt: "skate.",
-  precio: 0.00,
+  precio: 12.99,
   fecha_lanzamiento: new Date("09-16-2025"),
 },
 { id: 7,

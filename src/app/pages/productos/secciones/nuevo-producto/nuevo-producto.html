@@ -1,33 +1,66 @@
-<div class="container">
+<div class="container nuevo-producto-container">
 
-    <h1>Nuevo Producto</h1>
+  <h1 id="titulo">Nuevo producto</h1>
 
-    <!-- Insertamos directivas formGroup en etiqueta 
-     "form" para crear y vuncular un formulario reactivo -->
-    <form [formGroup]="nuevoProducto" (ngSubmit)="crearTarjeta()">
+  <!-- Formulario reactivo -->
+  <form [formGroup]="nuevoProducto" (ngSubmit)="crearTarjeta()" class="nuevo-producto-form">
 
-        <div class="mb-3">
-            <label for="titulo" class="form-label">Título</label>
-            <!-- formControlName -> Obtiene el valor individual de cada dato ingresado-->
-            <input id="titulo" type="text" class="form-control" formControlName="titulo">
-        </div>
+    <div class="mb-3">
+      <label for="titulo" class="form-label">Título</label>
+      <input id="titulo" type="text" class="form-control" formControlName="titulo">
+    </div>
 
-        <div class="mb-3">
-            <label for="descripcion" class="form-label">Descripción</label>
-            <input id="descripcion" type="text" class="form-control" formControlName="descripcion">
-        </div>
+    <div class="mb-3">
+      <label for="categoria" class="form-label">Categoría</label>
+      <input id="categoria" type="text" class="form-control" formControlName="categoria">
+    </div>
 
-        <div class="mb-3">
-            <label for="precio" class="form-label">Precio</label>
-            <input id="precio" type="number" class="form-control" formControlName="precio">
-        </div>
+    <div class="mb-3">
+      <label for="descripcion" class="form-label">Descripción</label>
+      <textarea id="descripcion" class="form-control" rows="3" formControlName="descripcion"></textarea>
+    </div>
 
-        <!-- El botón se va a desahabilitar cuando el forulario "nuevoProducto" no sea valido ("!"), Ej: Faltan rellenar campos -->
-        <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">Agregar</button>
+    <div class="mb-3">
+      <label for="img" class="form-label">URL de la imagen</label>
+      <input id="img" type="text" class="form-control" formControlName="img" placeholder="https://...">
+    </div>
 
-    </form>
+    <div class="mb-3">
+      <label for="alt" class="form-label">Texto alternativo (alt)</label>
+      <input id="alt" type="text" class="form-control" formControlName="alt">
+    </div>
 
-    <ul class="list-group" *ngFor="let tarjeta of coleccionProductos">
-        <li class="list-group-item">{{tarjeta.titulo}} - {{tarjeta.precio}}</li>
-</ul>
-</div>
+    <div class="mb-3">
+      <label for="precio" class="form-label">Precio (USD)</label>
+      <input id="precio" type="number" class="form-control" formControlName="precio">
+    </div>
+
+    <div class="form-check mb-3">
+      <input
+        id="enOferta"
+        type="checkbox"
+        class="form-check-input"
+        formControlName="enOferta">
+      <label class="form-check-label" for="enOferta">
+        ¿Está en oferta?
+      </label>
+    </div>
+
+    <div class="mb-3" *ngIf="nuevoProducto.get('enOferta')?.value">
+      <label for="precioOferta" class="form-label">Precio en oferta</label>
+      <input id="precioOferta" type="number" class="form-control" formControlName="precioOferta">
+    </div>
+
+    <div class="mb-3">
+      <label for="fecha_lanzamiento" class="form-label">Fecha de lanzamiento</label>
+      <input id="fecha_lanzamiento" type="date" class="form-control" formControlName="fecha_lanzamiento">
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary w-100"
+      [disabled]="!nuevoProducto.valid">
+      Agregar producto a la galería
+    </button>
+
+  </form>
